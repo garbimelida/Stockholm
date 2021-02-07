@@ -1,0 +1,435 @@
+*{  
+    margin:0;
+    padding:0;
+    border:0;
+    box-sizing: border-box;
+}
+
+:root{
+    
+    --tipo1: 'Raleway', sans-serif;
+    --tipo2: 'Raleway', sans-serif;
+
+    --naranja: #e6ae48;
+    --negro: #393939;
+    --blanco: white;
+
+}
+
+a{
+    display: block;
+    color:inherit;
+    text-decoration: none;
+}
+p a{
+    display: inline-flex;
+}
+li{
+    list-style-type: none;
+}
+h1 , h2 , h3 , h4 , h5 , h6 , strong{
+    font-size: inherit;
+    font-weight: inherit;
+}
+img{
+    width:100%;
+    display: block;
+    object-fit: cover;
+}
+::selection{
+    background-color: var(--naranja);
+    color: var(--blanco);
+    
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-size: 100%;
+    font-family: var(--tipo1);
+    color: var(--negro);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+} 
+
+
+
+/* ESTO ES LA CABECERA */
+
+.header{
+    width: 100%;
+    min-height: 4em;
+    background-color:var(--blanco);
+    padding: .7em 0;
+
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: .2em;
+
+    position: fixed;
+}
+.header .centrado{
+    width: 90%;
+    min-height: 5em;
+    /* background-color: rgb(160, 32, 32); */
+    margin: auto;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: initial;
+}
+
+
+/* Logo STKLM */
+.header .h1{
+    width: 100%;
+    max-width: 5em;
+    /* background-color: royalblue; */
+    color: var(--negro);
+
+    font-size: 2em;
+}
+
+
+/* menu */
+.header .nav{
+    width: calc( 100% - 12em );
+    /* background-color: slateblue; */
+
+    font-size: .8em;
+}
+.header .ul{
+    width: 100%;
+    /* background-color: lightblue; */
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: center;
+    align-content: initial;
+}
+.header .li{
+    margin: 0 0 0 4em;
+    position: relative;
+
+}
+.header .li .a{
+    transition: all .5s ease;
+
+    
+    
+}
+.header .li .a.aqui{
+    color: var(--naranja)
+}
+.header .li .a:hover{
+    color: var(--naranja);
+}
+
+.header .nav .ul .li .submenu1{  
+    width:15em;
+    background: var(--blanco);
+    position: absolute; 
+    padding: 1.5em;
+    margin: 2em 0 0;
+
+    font-weight: 400;
+    font-size: .8em;
+
+    border-top: .3em solid var(--naranja);
+
+    display: none;
+    transition: all .5s ease;
+
+}
+
+.header .nav .ul .li:hover .submenu1{
+    display: block;
+    
+}
+
+
+.header .nav .ul .li .submenu1 .li2{
+    margin: 1em 0 2em;
+    
+    
+}
+
+
+
+
+.header .fa-bars{
+    display: none;
+}
+
+
+
+/* ESTO ES EL CUERPO */
+
+    .main {
+        width: 100%;
+        /* background-color: green; */
+    }
+
+    /* FONDO BLANCO */
+    .main .producto{
+        width: 100%;
+        min-height: 100vh;
+
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+        align-content: initial;
+    }
+    .producto .centrado{
+        width: 90%;
+        max-width: 66em;
+        /* background-color: lime; */
+
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: center;
+        align-content: initial;
+
+    }
+    .producto .columna{
+        width: calc( 90% / 2);
+        /* background-color: linen; */
+    }
+    .producto .img{}
+    .producto .h2{
+        /* background-color: mediumturquoise; */
+
+        font-size: 2.1em;
+        font-weight: 800;
+        letter-spacing: .2em;
+    }
+    .producto .linea{
+        width: 100%;
+        max-width: 8em;
+        min-height: .12em;
+        /* background-color: var(--negro); */
+        margin:2em 0;
+        display: inline-flex;
+    }
+    .producto .p{
+        /* background-color:cornsilk; */
+        margin: 0 0 2.2em;
+
+        line-height: 1.8em;
+        font-weight: 400;
+    
+        
+    }
+    .producto .a{
+
+        /* background-color: darkcyan; */
+        padding: 1em 2em;
+        border: 2px solid var(--naranja);
+
+        display: inline-flex;
+
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: .7em;
+        letter-spacing: 2px;
+        color: var(--naranja);
+
+        transition: all .5s ease;
+    }
+    .producto .a:hover{
+        background-color: var(--naranja);
+        color: var(--blanco);
+    }
+
+
+
+    /* FONDO NARANJA */
+   .main .II{
+       background: var(--naranja)
+   }
+   .II .centrado{
+        max-width: 55em;
+       flex-flow: row-reverse wrap;
+       
+       text-align: right;
+   }
+   .II .h2{
+       color: var(--blanco);
+   }
+   .II .linea{
+       background-color: var(--blanco);
+   }
+   .II .p{
+       color: var(--blanco);
+   }
+   .II .a{
+       color: var(--blanco);
+       border-color: var(--blanco);
+   }
+   .II .a:hover{
+       background-color: var(--blanco);
+       color: var(--naranja)
+   }
+
+
+   
+
+
+
+    /* ESTO ES EL PIE */
+    .footer{
+        width: 100%;
+        min-height: 100vh;
+        background-color: var(--negro);
+
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+        align-content: initial;
+
+        text-align: center;
+    }
+    .footer .centrado{
+        width: 90%;
+        max-width: 69em;
+        /* background-color: grey; */
+
+        
+    }
+    .footer .h3{
+        font-size: 4em;
+        font-weight: 800;
+        letter-spacing: 10px;
+        color: var(--blanco);
+
+    }
+    .footer .copy{
+        font-size: .8em;
+        font-weight: 400;
+        color: var(--naranja);
+    }
+    .footer .linea{
+        width: 100%;
+        max-width: 6.5em;
+        height: .1em;
+        background-color: white;
+        margin: 2em auto 4em;
+
+
+    }
+    .footer .rrss{
+        /* background-color: teal; */
+
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+        align-content: initial;
+    }
+    .footer .red-social{
+        margin: 0 .4em;
+    }
+    .footer .a{
+        width:1.5em;
+        height: 1.5em;
+        background-color:var(--blanco);
+        color: var(--negro);
+
+        border-radius: 50%;
+
+
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+        align-content: initial;
+
+        transition: all .5s ease;
+    }
+    .footer .a:hover{
+        background-color: var(--naranja);
+    }
+    
+    .footer .a .fa-twitter{
+        position: relative;
+        top: .06em;
+        left: .06em;
+    }
+
+
+/* RESPONSIVE */
+
+    @media screen and (max-width:915px){
+
+        /* cabecera */
+        .header .nav{
+            display: none;
+        }
+
+        .header .fa-bars{
+            display: flex;
+            font-size: 1.5em;
+        }
+
+        /* cuerpo */
+        .main .producto{
+            padding: 15vh 0;
+        }
+
+        main .producto .centrado{
+            justify-content: center;
+        }
+
+        .main .columna{
+            width:80%;
+        }
+
+        .main .img{
+             margin: 0 0 2em;
+        }
+
+        /* pie */
+
+        .footer .a{
+            font-size: 1.5em;
+
+        }
+
+
+    } 
+
+
+/* MODO OSCURO */
+/* 
+    @media (prefers-color-scheme: dark) {
+
+        .header{
+            background-color: var(--negro);
+            color: var(--blanco);
+
+        }
+
+        .header .h1{
+            color:var(--blanco);
+        } 
+
+        .main .producto{
+            background-color: var(--negro);
+            color: var(--blanco);
+        }
+
+        .main .linea{
+            background-color: var(--blanco);
+        }
+
+        .main .II{
+            background-color: var(--naranja);
+        }
+    }
+ */
