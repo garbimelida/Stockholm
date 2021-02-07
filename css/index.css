@@ -382,7 +382,7 @@ body{
             padding: 15vh 0;
         }
 
-        main .producto .centrado{
+        .main .producto .centrado{
             justify-content: center;
         }
 
