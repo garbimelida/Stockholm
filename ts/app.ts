@@ -1,8 +1,8 @@
 
 
-const portfolio = document.querySelector( '.portfolio')
-const submenu2 = document.querySelector( '.submenu2')
+const portfolio = (document.querySelector( '.portfolio') as HTMLElement)
+const submenu  = (document.querySelector( '.submenu2')  as HTMLElement)
 
-portfolio.addEventListener('click',function(){
-    submenu2.classList.toggle('ver')
+portfolio.addEventListener('click',() => {
+    submenu.classList.toggle('ver')
 })
