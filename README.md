@@ -20,4 +20,4 @@ Indefinido (se ha ido cambiando segun dabamos materia en clase y correciones)
 Pagina Original de Stockholm: https://demo.select-themes.com/stockholm14/
 
 ## Contexto 💻
-Primera practica del curso de Desarrolladora Web Junior.
+Segunda practica del curso de Desarrolladora Web Junior.
