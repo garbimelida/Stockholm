@@ -154,7 +154,30 @@ body{
 .header .nav .ul .li .submenu1 .li2{
     margin: 1em 0 2em;
     
+}
+
+.header .submenu2{
+    width: 30em;
+    background-color:var(--blanco);
+    padding: 1.5em;
+    margin: 2em 0 0;
     
+    font-weight: 400;
+    font-size: .8em;
+    border-top: .3em solid var(--naranja);
+
+    position: absolute;
+    display: none;
+    
+
+}
+
+.header .submenu2.ver{
+    display: block;
+}
+
+.header .nav .ul .li .submenu2 .li3{
+    margin: 1em 0 2em
 }
 
 
