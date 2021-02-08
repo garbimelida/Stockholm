@@ -1,6 +1,10 @@
 # Descripción
  Home de la página web de Stockholm usando Custom Properties, con el modo Responsive y Drack Mode.
  
+ En el menu:
+ - "pages" interactivo con css
+ - "portfolio" interactivo con js 
+ 
 ## Construido con 🛠
 - HTML
 - CSS
