@@ -4,6 +4,7 @@
 ## Construido con 🛠
 - HTML
 - CSS
+- JS
 
 ## Autora 👩🏻‍💻 
 Garbiñe Mélida 
