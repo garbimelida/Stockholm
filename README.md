@@ -20,4 +20,7 @@ Indefinido (se ha ido cambiando segun dabamos materia en clase y correciones)
 Pagina Original de Stockholm: https://demo.select-themes.com/stockholm14/
 
 ## Contexto 💻
-Segunda practica del curso de Desarrolladora Web Junior.
+Segunda práctica del curso de Desarrolladora Web Junior de Women4It impartido por Bejob.
+
+- Women4It : https://women4it.eu/
+- Bejob: https://www.bejob.com/
